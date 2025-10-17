@@ -1,0 +1,41 @@
+.background {
+    width: 1470px;
+    height: 680px;
+    color:black;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    font-family:'Times New Roman', Times, serif;
+    background-image: url(background.png);
+    background-size: cover;
+}
+
+.contents {
+    width: 550px;
+    height: 25px;
+    border: 2px solid black;
+    padding: 10px;
+    background-color: aliceblue;
+    text-align: center;
+    top: 5px;
+    left: 900px;
+    position: relative;
+    word-spacing: 70px;
+}
+
+.contact {
+    color: paleturquoise;
+    font-family: Verdana;
+    text-align: left;
+    position: relative;
+    font-size: 300%;
+    top: -50px;
+}
+
+.info {
+    color: whitesmoke;
+    font-family: Times New Roman;
+    position: relative;
+    top: -70px;
+    left: 50;
+}
