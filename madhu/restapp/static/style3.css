@@ -39,3 +39,13 @@
     top: -70px;
     left: 50;
 }
+
+.copyrights{
+    width: 1510px;
+    height: 20px;
+    background-color: gray;
+    text-align: center;
+    top: -20px;
+    left: -20px;
+    position: relative;
+}

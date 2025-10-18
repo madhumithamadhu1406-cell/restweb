@@ -1,87 +1,79 @@
 .background {
     width: 1470px;
     height: 680px;
+    color:black;
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
-
-    color: black;
-    font-family: 'Times New Roman', Times, serif;
-
-    background-image: url(Background.jpg);
+    font-family:'Times New Roman', Times, serif;
+    background-image: url(background.png);
     background-size: cover;
 }
 
 .contents {
-    position: relative;
-    top: 5px;
-    left: 900px;
-
     width: 550px;
     height: 25px;
-    padding: 10px;
     border: 2px solid black;
-
+    padding: 10px;
     background-color: aliceblue;
     text-align: center;
+    top: 5px;
+    left: 900px;
+    position: relative;
     word-spacing: 70px;
 }
 
-.restname {
-    position: relative;
-    top: -50px;
-
-    text-align: left;
-    font-family: Verdana;
-    font-size: 300%;
+.admin {
     color: paleturquoise;
-}
-
-.line {
-    position: relative;
-    top: -120px;
-    left: 10px;
-
+    font-family: Verdana;
     text-align: left;
-    font-family: Verdana;
-    font-size: 250%;
-    color: beige;
+    position: relative;
+    font-size: 300%;
+    top: -50px;
 }
 
-.lines {
-    position: relative;
-    top: -100px;
+.admingrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));;
+    gap: 50px;
+    justify-items: center;
+    padding: 20px;
+    margin-top: -50px;
+}
 
+.adminlist{
+    background-color: beige;
+    border-radius: 10px;
     text-align: center;
-    font-family: Verdana;
-    font-size: 130%;
-    color: white;
+    padding: 20px;
+    width: 100%;
 }
 
-.image1 {
-    position: relative;
-    top: -90px;
-    left: 100px;
-
-    background-size: contain;
+.adminlist img {
+    border-radius: 10px;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50% / 35%;
 }
 
-.image2 {
-    position: relative;
-    top: -390px;
-    left: 800px;
+.adminlist h1 {
+    font-size: 1.5em;
+    color: black;
+    margin-top: 15px;
+}
 
-    background-size: contain;
+.adminlist p {
+    color: black;
+    margin-bottom: 0px;
 }
 
 .copyrights {
-    position: relative;
-    top: -330px;
-    left: -20px;
-
     width: 1510px;
     height: 20px;
-
     background-color: gray;
     text-align: center;
+    top: 30px;
+    left: -20px;
+    position: relative;
 }

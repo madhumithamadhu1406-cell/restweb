@@ -31,449 +31,457 @@ Publish the website in the given URL.
 ```
 
 home.html
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>MADHU RESTAURANT</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: lightcoral;
-            color:black;
-        }
-        header {
-            background-color: lightblue;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-            font-size: 2em;
-            font-weight: bold;
-        }
-        nav {
-            background-color:lightpink;
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            padding: 12px 0;
-        }
-        nav a {
-            color: rgb(232, 5, 5);
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1.1em;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-                .menu {
-            padding: 40px 20px;
-            max-width: 900px;
-            margin: 0 auto;
-        }
-        .menu h2 {
-            text-align: center;
-            color: #83624c;
-            margin-bottom: 30px;
-            font-size: 2em;
-        }
-        .menu-items {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            gap: 30px;
-        }
-        .menu-item {
-            background-color: #81664c;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            padding: 20px;
-            width: 250px;
-            text-align: center;
-        }
-        .menu-item img {
-            width: 100%;
-            border-radius: 6px;
-            margin-bottom: 10px;
-        }
-        .menu-item h3 {
-            margin-bottom: 8px;
-            color: #201813;
-        }
-        .menu-item p {
-            font-size: 1em;
-            color: #5a2e00;
-        }
-        footer {
-            background-color: #8e2929;
-            color: white;
-            text-align: center;
-            padding: 18px 10px;
-            margin-top: 40px;
-        }
-    </style>    
+  <title>MNM RESTAURANT'S</title>
+  <style>
+    body { 
+      background-color: rgb(144, 75, 77); 
+      font-family: Arial, sans-serif; 
+      text-align: center; 
+      margin: 0;
+      padding: 0;
+    }
 
+    nav a { 
+      margin: 10px; 
+      text-decoration: none; 
+      color: rgb(93, 56, 56); 
+      background-color: rgb(247, 249, 250); 
+      padding: 5px 10px; 
+      border-radius: 5px; 
+    }
+
+    .banner-container {
+  position: relative;
+  width: 100%;
+  max-width: 2000px;
+  margin: 20px auto;
+  display: flex;         
+  justify-content: center; 
+}
+
+.banner-container img {
+  width: 50%;
+  height: 600px; 
+  border-radius: 10px;
+  display: block;
+}
+    .banner-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 40px;
+      font-weight: bold;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 20px 40px;
+      border-radius: 10px;
+    }
+  </style>
 </head>
 <body>
-<header>
-  <h1>MADHU RESTAURANT</h1>
+
+  <h1>MNM RESTAURANT'S</h1>
+
   <nav>
     <a href="home.html">Home</a>
-    <a href="about.html">About</a>
     <a href="menu.html">Menu</a>
+    <a href="admin.html">Administration</a>
     <a href="contact.html">Contact</a>
-    <a href="booking.html">Book Table</a>
   </nav>
-</header>
- <section id="About" class="About">
-        <h1>Welcome to madhu Restaurant</h1>
-        <p>our staffs</p>
-        </section>
- <img src="photo4.jpg"height="200",width="200"style>
-<img src="image1.png"height="200",width="200"style>
- <img src="image2.png"height="200",width="200"style>
- <img src="image3.png"height="200",width="200"style>
- <img src="image4.jpg"height="200",width="200"style>
 
- <footer>
+  <div class="banner-container">
+    <img src="img1.jpg" alt="Restaurant Banner">
+  </div>
 
-  <p>© 2025 Designed By MADHUMITHA</p>
-</footer>
+  <h3>Our Restaurant Specials</h3>
+  <p>Try our Indian dishes and desserts!</p>
+
+  <h3>Welcome To Our MNM RESTAURANT's</h3>
 </body>
 </html>
+
 
 admin.html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Admin Dashboard</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-<header>
-  <h1>Admin Dashboard</h1>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="menu.html">Menu</a>
-    <a href="contact.html">Contact</a>
-    <a href="admin.html">Logout</a>
-  </nav>
-</header>
-
-<section class="dashboard">
-  <h2>Available Dishes</h2>
-  <ul>
-    <li>chicken rice</li>
-    <li>chicken noodles</li>
-    <li>meals</li> </li>
-    <li>parotta</li>
-    <li>Chicken Biryani</li>
-    <li>idly</li>
-    <li>fish</li>
-    <li>panipoori</li>
-    <li>chicken barbeque</li>
-    <li>sandwich</li>
-    <li>butter chicken</li>
-    <li>chickenwing</li>
-,  </ul>
-
-  <h2>Add New Dish</h2>
-  <form>
-    <input type="text" placeholder="Dish Name">
-    <input type="text" placeholder="Price">
-    <button type="submit">Add Dish</button>
-  </form>
-
-  <h2>Employees on Shift</h2>
-  <ul>
-    <li>MUGIL- Chef</li>
-    <li>KANI - Waitress</li>
-    <li>ARASI - Manager</li>
-  </ul>
-</section>
-
-<footer>
-  <p>© 2025 MADHU Restaurant</p>
-</footer>
-</body>
-</html>
-
-booking.html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>MADHU RESTAURANT - Book table </title>
-  <style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MNM Restaurant'S Administration</title>
+<style>
     body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background-color: pink;
-      color: #291515;
+        font-family: Arial, sans-serif;
+        background-color: #ad3333;
+        margin: 0;
+        padding: 0;
+        text-align: center;
     }
-    header {
-      background-color:greenyellow;
-      color: black;
-      padding: 20px 0;
-      text-align: center;
-      font-size: 2em;
-      font-weight: bold;
+
+    h1 {
+        background-color: #ad2a35;
+        color: white;
+        padding: 20px 0;
+        margin: 0;
     }
+
     nav {
-      background-color: skyblue;
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      padding: 12px 0;
+        margin: 20px 0;
     }
+
     nav a {
-      color: black;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 1.1em;
+        text-decoration: none;
+        color: rgb(158, 47, 47);
+        background-color: #f2ecec;
+        padding: 10px 15px;
+        border-radius: 5px;
+        margin: 0 5px;
     }
-    nav a:hover {
-      text-decoration: underline;
+
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
     }
-    .booking-form {
-      max-width: 600px;
-      margin: 40px auto;
-      background-color: cyan;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
+    .gallery-item {
+        flex: 1 1 45%; 
+        max-width: 45%;
+        height: 200px;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     }
-    .booking-form h2 {
-      text-align: center;
-      color: black;
-      margin-bottom: 25px;
-      font-size: 2em;
+
+    .gallery-item img {
+        width: 50%;
+        height: 50%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
     }
-    .booking-form label {
-      display: block;
-      margin-bottom: 8px;
-      font-weight: 600;
+
+    .gallery-item img:hover {
+        transform: scale(1.1);
     }
-    .booking-form input, 
-    .booking-form select, 
-    .booking-form textarea {
-      width: 100%;
-      padding: 5px;
-      margin-bottom: 10px;
-      border-radius: 6px;
-      border: 1px solid #ccc;
-      font-size: 1em;
+
+    @media (max-width: 600px) {
+        .gallery-item {
+            flex: 1 1 100%; 
+            max-width: 100%;
+        }
     }
-    .booking-form button {
-      background-color: white;
-      color: white;
-      padding: 12px 20px;
-      border: none;
-      border-radius: 6px;
-      font-size: 1.1em;
-      cursor: pointer;
-      width: 100%;
-    }
-    .booking-form button:hover {
-      background-color: black;
-    }
+
     footer {
-      background-color: yellowgreen;
-      color: black;
-      text-align: center;
-      padding: 12px 10px;
-      margin-top: 5px;
+        margin-top: 30px;
+        padding: 15px;
+        background-color: #ad3434;
+        color: white;
     }
-  </style>
+</style>
 </head>
 <body>
-  <header>
-    MADHU RESTAURANT
+
+    <h1>MNM RESTAURANT'S ADMINISTRATION</h1>
+
     <nav>
-      <a href="home.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="menu.html">Menu</a>
-      <a href="contact.html">Contact</a>
-      <a href="booking.html">Book Table</a>
+        <a href="home.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="admin.html">Administration</a>
+        <a href="contact.html">Contact</a>
     </nav>
-  </header>
 
-  <section class="booking-form">
-    <h2>Book a Table</h2>
-    <form action="#" method="POST">
-      <label for="name">Full Name</label>
-      <input type="text" id="name" name="name" placeholder="Your name" required>
+    <h2>OUR ADMINISTRATORS</h2>
+    
 
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" placeholder="Your Email" required>
+    <div class="gallery">
+        <div><img src="photo4.jpg" alt="FOUNDER"></div>
+        <div><img src="image1.png" alt="CO-FOUNDER"></div>
+        <div><img src="image2.png" alt="SERVER 1"></div>
+        <div><img src="image3.png"SERVER 2"></div>
+        <div><img src="image4.jpg" alt="CHEF 1"></div>
+    </div>
 
-      <label for="phone">Phone Number</label>
-      <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+    <footer>
+        <p>Designed by Madhumitha V(25016067)</p>
+    </footer>
 
-      <label for="guests">Number of Guests</label>
-      <input type="number" id="guests" name="guests" min="1" placeholder="Number of Guests" required>
-
-      <label for="date">Date</label>
-      <input type="date" id="date" name="date" required>
-
-      <label for="time">Time</label>
-      <input type="time" id="time" name="time" required>
-
-      <button type="submit">Book Now</button>
-    </form>
-  </section>
-
-  <footer>
-    <p>© 2025 Designed By MADHUMITHA V</p>
-  </footer>
 </body>
 </html>
 
-menu.html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title> MADHU RESTAURANT</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #fff8f0;
-            color: #291515;
-        }
-        header {
-            background-color: #8d5f5f;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-            font-size: 2em;
-            font-weight: bold;
-        }
-        nav {
-            background-color: #625b40;
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            padding: 12px 0;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1.1em;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-                .menu {
-            padding: 40px 20px;
-            max-width: 900px;
-            margin: 0 auto;
-        }
-        .menu h2 {
-            text-align: center;
-            color: #83624c;
-            margin-bottom: 30px;
-            font-size: 2em;
-        }
-        .menu-items {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            gap: 30px;
-        }
-        .menu-item {
-            background-color: lightseagreen;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            padding: 20px;
-            width: 250px;
-            text-align: center;
-        }
-        .menu-item img {
-            width: 100%;
-            border-radius: 6px;
-            margin-bottom: 10px;
-        }
-        .menu-item h3 {
-            margin-bottom: 8px;
-            color: #201813;
-        }
-        .menu-item p {
-            font-size: 1em;
-            color: #5a2e00;
-        }
-        footer {
-            background-color: lightcoral;
-            color: white;
-            text-align: center;
-            padding: 18px 10px;
-            margin-top: 40px;
-        }
-    </style>    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OUR Restaurant Menu</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #2e1b0f;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+    }
 
+    nav a { 
+      margin: 8px; 
+      text-decoration: none; 
+      color: rgb(93, 56, 56); 
+      background-color: rgb(247, 249, 250); 
+      padding: 6px 12px; 
+      border-radius: 8px; 
+    }
+
+    .menu-container {
+        max-width: 1000px;
+        margin: 50px auto;
+        padding: 10px;
+        background-color: #a16b4a;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 2.5em;
+        margin-bottom: 40px;
+    }
+
+    .menu-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 20px; 
+        margin-bottom: 40px;
+        margin-top: 1cm;
+    }
+    
+    .menu-item {
+        flex: 1 1 200px; 
+        max-width: 220px; 
+        display: flex;
+        align-items: center;
+        background-color: #774c36;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .menu-item img {
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-right: 15px;
+    }
+
+    .menu-item div {
+        flex: 1;
+        text-align: left;
+    }
+
+    .menu-item span {
+        float: right;
+        font-weight: bold;
+    }
+
+    @media (max-width: 800px) {
+        .menu-item {
+            flex: 1 1 45%;
+            max-width: none;
+        }
+    }
+
+    @media (max-width: 500px) {
+        .menu-item {
+            flex: 1 1 100%;
+        }
+    }
+
+    .website-link {
+        margin-top: 30px;
+        font-weight: bold;
+        color: #f5d042;
+        text-decoration: none;
+        display: inline-block;
+    }
+</style>
 </head>
 <body>
-<header>
-  <h1>MADHU RESTAURANT</h1>
-  <nav>
-    <a href="home.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="menu.html">Menu</a>
-    <a href="contact.html">Contact</a>
-    <a href="booking.html">Book Table</a>
-  </nav>
-</header>
- <section id="Menu" class="Menu">
-        <h1>WELCOME TO MADHU RESTAURANT</h1>
-        <p>Experience the best flavors of traditional and modern cuisine in our restaurant.</p>
-    </section>
- <img src="item1.png"height="150",width="150"style>
-<img src="item2.png"height="150",width="150"style>
- <img src="item3.png"height="150",width="150"style>
- <img src="item4.png"height="150",width="150"style>
- <img src="item5.png"height="150",width="150"style>
 
+    <div class="menu-container">
+        <h1>OUR RESTAURANT MENU</h1>
 
- <footer>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="admin.html">Administration</a>
+            <a href="contact.html">Contact</a>
+        </nav>
 
-  <p>© 2025 Designed By MADHUMITHA V</p>
-</footer>
+        <div class="menu-section">
+            <div class="menu-item">
+                <img src="item1.png" alt="mutton" >
+                <div>mutton</div>
+            </div>
+            <div class="menu-item">
+                <img src="item2.png" alt="chicken gravy">
+                <div>chicken gravy</div>
+            </div>
+            <div class="menu-item">
+                <img src="item3.png" alt="fish biriyani">
+                <div>fish biriyani</div>
+            </div>
+            <div class="menu-item">
+                <img src="item4.png" alt="tandoori" >
+                <div>tandoori</div>
+            </div>
+            <div class="menu-item">
+                <img src="item5.png" alt="mutton chuka" >
+                <div>mutton chuka</div>
+            </div>
+        </div>
+
+        <a href=" " class="website-link">WWW.MNM RESTAURANT'S.COM</a>
+    </div>
 </body>
 </html>
+
 
 contact.html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Restaurant - Contact</title>
-  <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MNM Restaurant - Contact Us</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #ad2929;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    h1 {
+        background-color: #ad2222;
+        color: white;
+        padding: 20px 0;
+        margin: 0;
+    }
+
+    nav {
+        margin: 20px 0;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: rgb(158, 35, 35);
+        background-color: #f2f5f8;
+        padding: 10px 15px;
+        border-radius: 5px;
+        margin: 0 5px;
+    }
+
+    .contact-container {
+        max-width: 600px;
+        margin: 30px auto;
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        text-align: left;
+    }
+
+    .contact-container h2 {
+        text-align: center;
+        color: #333;
+    }
+
+    label {
+        display: block;
+        margin-top: 15px;
+        font-weight: bold;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+
+    textarea {
+        resize: vertical;
+        height: 120px;
+    }
+
+    button {
+        background-color: #ad2828;
+        color: white;
+        padding: 12px 25px;
+        margin-top: 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    button:hover {
+        background-color: #ad1818;
+    }
+
+    footer {
+        margin-top: 30px;
+        padding: 15px;
+        background-color: #ad2121;
+        color: white;
+        text-align: center;
+    }
+
+</style>
 </head>
 <body>
-<header>
-  <h1>MADHU Restaurant</h1>
-  <nav>
+
+<h1>MNM RESTAURANT'S</h1>
+
+<nav>
     <a href="home.html">Home</a>
     <a href="menu.html">Menu</a>
-    <a href="contact.html">Contact</a>
     <a href="admin.html">Administration</a>
-  </nav>
-</header>
+    <a href="contact.html">Contact</a>
+</nav>
 
-<section class="contact">
-  <h2>Contact Us</h2>
-  <p>📍 no.8,ANNA NAGAR,VELLORE</p>
-  <p>📞 +91 987655780</p>
-  <p>📧 EMAIL : madhu2006@gmail.com</p>
-</section>
+<div class="contact-container">
+    <h2>Contact Us</h2>
+    <p>We would love to hear from you! Please fill out the form below:</p>
+
+    <form action="#" method="post">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone" placeholder="Your Phone Number">
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+</div>
 
 <footer>
-  <p>© 2025 MADHU Restaurant</p>
+    <p>Designed by Madhumitha V(25016067)</p>
 </footer>
+
 </body>
 </html>
 
@@ -481,11 +489,15 @@ contact.html
 
 
 ## OUTPUT:
-![alt text](<Screenshot 2025-10-17 213116.png>)
-![alt text](<Screenshot 2025-10-17 213132.png>)
-![alt text](<Screenshot 2025-10-17 213147.png>)
-![alt text](<Screenshot 2025-10-17 213207.png>)
-![alt text](<Screenshot 2025-10-17 213236.png>)
+
+![alt text](<Screenshot (44).png>)
+![alt text](<Screenshot (45).png>)
+![alt text](<Screenshot (46).png>)
+![alt text](<Screenshot (47).png>)
+
+
+
+
 
 ## RESULT:
 The program for designing software company website using HTML and CSS is completed successfully.

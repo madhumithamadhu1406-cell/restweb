@@ -1,55 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Admin Dashboard</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MNM Restaurant'S Administration</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #ad3333;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    h1 {
+        background-color: #ad2a35;
+        color: white;
+        padding: 20px 0;
+        margin: 0;
+    }
+
+    nav {
+        margin: 20px 0;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: rgb(158, 47, 47);
+        background-color: #f2ecec;
+        padding: 10px 15px;
+        border-radius: 5px;
+        margin: 0 5px;
+    }
+
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .gallery-item {
+        flex: 1 1 45%; 
+        max-width: 45%;
+        height: 200px;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .gallery-item img {
+        width: 50%;
+        height: 50%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+    }
+
+    .gallery-item img:hover {
+        transform: scale(1.1);
+    }
+
+    @media (max-width: 600px) {
+        .gallery-item {
+            flex: 1 1 100%; 
+            max-width: 100%;
+        }
+    }
+
+    footer {
+        margin-top: 30px;
+        padding: 15px;
+        background-color: #ad3434;
+        color: white;
+    }
+</style>
 </head>
 <body>
-<header>
-  <h1>Admin Dashboard</h1>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="menu.html">Menu</a>
-    <a href="contact.html">Contact</a>
-    <a href="admin.html">Logout</a>
-  </nav>
-</header>
 
-<section class="dashboard">
-  <h2>Available Dishes</h2>
-  <ul>
-    <li>chicken rice</li>
-    <li>chicken noodles</li>
-    <li>meals</li> </li>
-    <li>parotta</li>
-    <li>Chicken Biryani</li>
-    <li>idly</li>
-    <li>fish</li>
-    <li>panipoori</li>
-    <li>chicken barbeque</li>
-    <li>sandwich</li>
-    <li>butter chicken</li>
-    <li>chickenwing</li>
-,  </ul>
+    <h1>MNM RESTAURANT'S ADMINISTRATION</h1>
 
-  <h2>Add New Dish</h2>
-  <form>
-    <input type="text" placeholder="Dish Name">
-    <input type="text" placeholder="Price">
-    <button type="submit">Add Dish</button>
-  </form>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="admin.html">Administration</a>
+        <a href="contact.html">Contact</a>
+    </nav>
 
-  <h2>Employees on Shift</h2>
-  <ul>
-    <li>MUGIL- Chef</li>
-    <li>KANI - Waitress</li>
-    <li>ARASI - Manager</li>
-  </ul>
-</section>
+    <h2>OUR ADMINISTRATORS</h2>
+    
 
-<footer>
-  <p>© 2025 MADHU Restaurant</p>
-</footer>
+    <div class="gallery">
+        <div><img src="photo4.jpg" alt="FOUNDER"></div>
+        <div><img src="image1.png" alt="CO-FOUNDER"></div>
+        <div><img src="image2.png" alt="SERVER 1"></div>
+        <div><img src="image3.png"SERVER 2"></div>
+        <div><img src="image4.jpg" alt="CHEF 1"></div>
+    </div>
+
+    <footer>
+        <p>Designed by Madhumitha V(25016067)</p>
+    </footer>
+
 </body>
 </html>
